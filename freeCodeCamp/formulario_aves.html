@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="Autor" content="Jefeson Alves">
+        <meta name="Assunto" content="Formulário de pesquisa sobre calopsita.">
+        <title>
+            Formulário Calopsita
+        </title>
+        <link rel="icon" href="/freeCodeCamp/img/favicon.png">
+    </head>
+    <body>
+        <header>
+            <h1>Formulário de Calopsita 🐦</h1>
+            <nav aria-label="navegação primária">
+                <ul>
+                    <li>
+                        <a href="/freeCodeCamp/index.html">Home</a>                
+                </ul>
+
+            </nav>
+            <hr>
+        </header>
+        <main>
+            <article id="formulario">
+                <h2>Formulário Calopsitas</h2>
+                <p>Responda essa pesquisa e nos ajude a entender mais sobre essa ave.</p>
+                <p>PS: Se você quiser, pode anexar uma foto da sua calopsita para fazer parte da nossa galeria.</p>
+                <form action="https://www.freecatphotoapp.com/submit-cat-photo">
+                    <fieldset>
+                        <legend>
+                            Informações sobre sua calopsita
+                        </legend>
+                        <p>
+                            <label for="nomeCalopsita">Qual o nome da sua calopsita?</label>
+                            <input type="text" name="nomeCalopsita" id="nomeCalopsita" placeholder="Ariel" autocomplete="on" required autofocus>
+                        </p>
+                        <p>
+                            <label for="quantCalopsita">Quantas calopsitas você tem?</label>
+                            <input type="number" name="quantCalopsita" id="quantCalopsita" min="1" max="30" step="1" value="1" required>
+                        </p>
+                        <p>Sua calopsita fica em gaiola?</p>
+                        <p>
+                            <input type="radio" name="gaiolaSim" id="gaiolaSim">
+                            <label for="gaiolaSim">Sim</label>
+                        </p>
+                        <p>
+                            <input type="radio" name="gaiolaNao" id="gaiolaNao">
+                            <label for="gaiolaNao">Não</label>
+                        </p>
+                        <p>Como é a personalidade da sua calopsita?</p>
+                        <p>
+                            <input type="checkbox" name="personalidade" id="manhosa">
+                            <label for="manhosa">Manhosa</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="personalidade" id="preguiçosa">
+                            <label for="preguiçosa">Preguiçosa</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="personalidade" id="espoleta">
+                            <label for="espoleta">Espoleta</label>
+                        </p>
+                        <p>
+                            <input type="checkbox" name="personalidade" id="desconfiada">
+                            <label for="desconfiada">Desconfiada</label>
+                        </p>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Sua calopsita na nossa galeria</legend>
+                        <p>Envie uma foto para adicionarmos na nossa galeria</p>
+                        <input type="file" name="anexoFoto" id="anexoFoto">
+                        <p>
+                            <label for="mensagem">Legenda da foto</label>
+                        </p>
+                        <textarea name="mensagem" id="mensagem" cols="30" rows="10" placeholder="Insira a legenda da sua foto aqui"></textarea>
+                    </fieldset>
+                    <br>
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Redefinir</button>
+                </form>
+
+            </article>
+            <hr>
+            <p>
+                <a href="/freeCodeCamp/formulario_aves.html">Voltar ao topo</a>
+            </p>
+        </main>
+        <footer>
+            &lt; &copy; Copyright App Calopsita &gt;
+        </footer>
+    </body>
+</html>
